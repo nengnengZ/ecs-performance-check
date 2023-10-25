@@ -20,7 +20,6 @@ print(u"物理CPU个数: %s" % psutil.cpu_count(logical=False))<br>
 ### Memory Information and Available Memory
 '''查看内存信息,剩余内存.free  总共.total'''<br>
 '''round()函数方法为返回浮点数x的四舍五入值'''<br>
-
 free = str(round(psutil.virtual_memory().free / (1024.0 * 1024.0 * 1024.0), 2))<br>
 total = str(round(psutil.virtual_memory().total / (1024.0 * 1024.0 * 1024.0), 2))<br>
 memory = int(psutil.virtual_memory().total - psutil.virtual_memory().free) / float(psutil.virtual_memory().total)<br>
