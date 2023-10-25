@@ -13,9 +13,9 @@ psutil version 5.9.6
 
 # For example
 ### Getting CPU information
-'''查看cpu物理个数的信息'''
-import psutil
-print(u"物理CPU个数: %s" % psutil.cpu_count(logical=False))
+'''查看cpu物理个数的信息'''<br>
+import psutil<br>
+print(u"物理CPU个数: %s" % psutil.cpu_count(logical=False))<br>
 
 ### Memory Information and Available Memory
 '''查看内存信息,剩余内存.free  总共.total'''
