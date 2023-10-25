@@ -3,13 +3,13 @@ psutil (python system and process utilities) is a cross-platform third-party lib
 
 # Getting Started 
 ### linux
-psutil install for linux
-pip3 install psutil
+psutil install for linux<br>
+pip3 install psutil<br>
 
 ### Pycharm
-psutil install for Pycharm
-settting -- Python Interpreter -- Alt + insert
-psutil version 5.9.6
+psutil install for Pycharm<br>
+settting -- Python Interpreter -- Alt + insert<br>
+psutil version 5.9.6<br>
 
 # For example
 ### Getting CPU information
@@ -18,12 +18,12 @@ import psutil<br>
 print(u"物理CPU个数: %s" % psutil.cpu_count(logical=False))<br>
 
 ### Memory Information and Available Memory
-'''查看内存信息,剩余内存.free  总共.total'''
-'''round()函数方法为返回浮点数x的四舍五入值'''
+'''查看内存信息,剩余内存.free  总共.total'''<br>
+'''round()函数方法为返回浮点数x的四舍五入值'''<br>
 
-free = str(round(psutil.virtual_memory().free / (1024.0 * 1024.0 * 1024.0), 2))
-total = str(round(psutil.virtual_memory().total / (1024.0 * 1024.0 * 1024.0), 2))
-memory = int(psutil.virtual_memory().total - psutil.virtual_memory().free) / float(psutil.virtual_memory().total)
-print(u"物理内存： %s G" % total)
-print(u"剩余物理内存： %s G" % free)
-print(u"物理内存使用率： %s %%" % int(memory * 100))
+free = str(round(psutil.virtual_memory().free / (1024.0 * 1024.0 * 1024.0), 2))<br>
+total = str(round(psutil.virtual_memory().total / (1024.0 * 1024.0 * 1024.0), 2))<br>
+memory = int(psutil.virtual_memory().total - psutil.virtual_memory().free) / float(psutil.virtual_memory().total)<br>
+print(u"物理内存： %s G" % total)<br>
+print(u"剩余物理内存： %s G" % free)<br>
+print(u"物理内存使用率： %s %%" % int(memory * 100))<br>
